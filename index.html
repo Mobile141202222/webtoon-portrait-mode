@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Webtoon Portrait Fit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #050806;
+      --bg-card: rgba(14, 22, 17, 0.65);
+      --accent-green: #00e56a;
+      --accent-green-glow: rgba(0, 229, 106, 0.15);
+      --border-subtle: rgba(0, 229, 106, 0.12);
+      --text-white: #f0fdf4;
+      --text-gray: #8da294;
+      --text-dim: #5c7063;
+      --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at 50% 0%, #0d2516 0%, #050806 80%) no-repeat fixed;
+      background-color: var(--bg-dark);
+      color: var(--text-white);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 60px 20px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Page Container */
+    .container {
+      width: 100%;
+      max-width: 780px;
+      animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) both;
+    }
+
+    /* Header Section */
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 40px;
+      gap: 15px;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      filter: drop-shadow(0 4px 15px rgba(0, 229, 106, 0.4));
+      transition: transform var(--transition-smooth);
+    }
+
+    .logo-container:hover {
+      transform: scale(1.1) rotate(-3deg);
+    }
+
+    .logo-svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .header-title-area h1 {
+      font-size: 36px;
+      font-weight: 900;
+      letter-spacing: -1px;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, #ffffff, #8da294);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .header-title-area p {
+      font-size: 16px;
+      color: var(--accent-green);
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .effective-date {
+      font-size: 13px;
+      color: var(--text-dim);
+      margin-top: 5px;
+    }
+
+    /* Main Policy Card */
+    .policy-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border-subtle);
+      border-radius: 20px;
+      padding: 45px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      margin-bottom: 40px;
+    }
+
+    /* Intro paragraph */
+    .intro {
+      font-size: 15.5px;
+      color: var(--text-gray);
+      line-height: 1.7;
+    }
+
+    /* Section Styling */
+    .section {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      position: relative;
+    }
+
+    .section::before {
+      content: "";
+      position: absolute;
+      left: -20px;
+      top: 5px;
+      width: 4px;
+      height: 20px;
+      background: var(--accent-green);
+      border-radius: 2px;
+      box-shadow: 0 0 8px var(--accent-green);
+    }
+
+    .section h2 {
+      font-size: 19px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.3px;
+    }
+
+    .section p {
+      font-size: 14.5px;
+      color: var(--text-gray);
+      line-height: 1.65;
+    }
+
+    /* Beautiful custom lists */
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      list-style: none;
+      padding-left: 5px;
+    }
+
+    .list li {
+      font-size: 14.5px;
+      color: var(--text-gray);
+      line-height: 1.6;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .list li::before {
+      content: "✓";
+      color: var(--accent-green);
+      font-weight: 900;
+      font-size: 15px;
+      line-height: 1.4;
+      text-shadow: 0 0 6px rgba(0, 229, 106, 0.4);
+    }
+
+    /* Divider */
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border-subtle) 15%, var(--border-subtle) 85%, transparent);
+    }
+
+    /* Footer styling */
+    .footer {
+      text-align: center;
+      font-size: 12.5px;
+      color: var(--text-dim);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .footer a {
+      color: var(--text-gray);
+      text-decoration: none;
+      transition: color var(--transition-smooth);
+      font-weight: 500;
+    }
+
+    .footer a:hover {
+      color: var(--accent-green);
+      text-shadow: 0 0 6px var(--accent-green-glow);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      body {
+        padding: 40px 15px;
+      }
+      .policy-card {
+        padding: 25px 20px;
+      }
+      .header-title-area h1 {
+        font-size: 28px;
+      }
+      .section::before {
+        left: -15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="logo-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="logo-svg">
+          <g transform="rotate(-6, 50, 50)">
+            <path d="M10,12 L90,12 C95,12 98,15 98,20 L94,72 C94,77 90,80 85,80 L50,80 L38,94 L38,80 L14,80 C9,80 6,76 6,71 L10,20 C10,15 12,12 12,12 Z" fill="#00e56a" />
+            <text x="50" y="42" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-size="22" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" letter-spacing="-0.5">WEB</text>
+            <text x="48" y="68" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-size="22" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" letter-spacing="-0.5">TOON</text>
+          </g>
+        </svg>
+      </div>
+      <div class="header-title-area">
+        <p>Webtoon Portrait Fit</p>
+        <h1>Privacy Policy</h1>
+        <div class="effective-date">Effective Date: June 29, 2026</div>
+      </div>
+    </div>
+
+    <!-- Policy Content Card -->
+    <div class="policy-card">
+      
+      <p class="intro">
+        Your privacy is extremely important to us. This Privacy Policy explains how <strong>Webtoon Portrait Fit</strong> (the "Extension") handles your information when you use our browser extension. We believe in complete transparency and have designed our service to require zero personal data.
+      </p>
+
+      <div class="divider"></div>
+
+      <!-- Section 1 -->
+      <div class="section">
+        <h2>1. No Collection of Personal Information</h2>
+        <p>The Extension is built with privacy-first principles. We want to make it absolutely clear that:</p>
+        <ul class="list">
+          <li>We do <strong>not</strong> collect, harvest, store, or transmit any personally identifiable information (such as your name, email address, IP address, or location).</li>
+          <li>We do <strong>not</strong> record, save, or share your browsing history, page visits, or usage behavior.</li>
+          <li>We do <strong>not</strong> track your clicks, scroll events, or searches.</li>
+        </ul>
+      </div>
+
+      <!-- Section 2 -->
+      <div class="section">
+        <h2>2. Local Storage and Data Usage</h2>
+        <p>The Extension allows you to customize the reading layout (such as manual panel width, background color selections, and Zen Mode toggles). To make this experience seamless, these settings need to be saved:</p>
+        <ul class="list">
+          <li><strong>Storage Location:</strong> All configurations and options are saved 100% locally on your own computer using the browser's secure <code>chrome.storage.local</code> API.</li>
+          <li><strong>No Server Syncing:</strong> These preferences remain strictly on your local machine and are never uploaded or synced to external servers, cloud storage, or third parties.</li>
+        </ul>
+      </div>
+
+      <!-- Section 3 -->
+      <div class="section">
+        <h2>3. Permissions Explained</h2>
+        <p>To perform its layout adjustments, the Extension requires the minimum necessary browser permissions:</p>
+        <ul class="list">
+          <li><strong><code>storage</code>:</strong> Used solely to persist your custom settings so they do not reset every time you open a new tab.</li>
+          <li><strong><code>activeTab</code>:</strong> Used to temporarily apply layout styling and resizing adjustments on the active Webtoon tab when you load a viewer page.</li>
+        </ul>
+      </div>
+
+      <!-- Section 4 -->
+      <div class="section">
+        <h2>4. No Third-Party Services or Analytics</h2>
+        <p>We do not bundle any third-party tracking scripts, advertising networks, analytics trackers (such as Google Analytics), or remote pixels. All styling and layout logic runs offline within your browser shell.</p>
+      </div>
+
+      <!-- Section 5 -->
+      <div class="section">
+        <h2>5. Compliance with Developer Policies</h2>
+        <p>Webtoon Portrait Fit fully complies with the Google Chrome Web Store Developer Program Policies, specifically meeting the User Data Privacy Policy's guidelines on Single Purpose and Limited Use of user data.</p>
+      </div>
+
+      <!-- Section 6 -->
+      <div class="section">
+        <h2>6. Changes to this Policy</h2>
+        <p>We may update this Privacy Policy from time to time to align with new browser guidelines. Any modifications will be posted directly to this page and bundled inside new version releases. Your continued use of the Extension indicates acceptance of these practices.</p>
+      </div>
+
+      <!-- Section 7 -->
+      <div class="section">
+        <h2>7. Contact Us</h2>
+        <p>If you have any questions, bug reports, or feedback regarding this Privacy Policy or the Extension's design, please open an issue in our repository or contact the developer directly.</p>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div>&copy; 2026 Webtoon Portrait Fit. All rights reserved.</div>
+      <div>Designed for a secure and private comic reading experience.</div>
+    </div>
+  </div>
+
+</body>
+</html>
