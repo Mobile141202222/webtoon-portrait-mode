@@ -1,0 +1,65 @@
+{
+  "extName": {
+    "message": "Webtoon Portrait Mode"
+  },
+  "extDescription": {
+    "message": "Adjusts Webtoon images to fit vertical screens, removes side borders, and adds a Zen reading mode."
+  },
+  "descFitWidth": {
+    "message": "Auto-resize panels to match screen width"
+  },
+  "descWidth": {
+    "message": "Adjust comic display width manually"
+  },
+  "descZenMode": {
+    "message": "Hide sidebar, advertisements, and comments"
+  },
+  "descHideMouse": {
+    "message": "Hide cursor over comic, show on click for 3s"
+  },
+  "descAutoNext": {
+    "message": "Scroll past the top or bottom to change episodes"
+  },
+  "descBackground": {
+    "message": "Sidebar background color"
+  },
+  "popupTitle": {
+    "message": "Webtoon Portrait Mode"
+  },
+  "labelFitWidth": {
+    "message": "Fit to Screen"
+  },
+  "labelWidth": {
+    "message": "Width"
+  },
+  "labelZenMode": {
+    "message": "Zen Mode"
+  },
+  "labelHideMouse": {
+    "message": "Hide Cursor"
+  },
+  "labelAutoNext": {
+    "message": "Auto-Next Episode"
+  },
+  "labelBackground": {
+    "message": "Background"
+  },
+  "resetDefaults": {
+    "message": "Reset Defaults"
+  },
+  "statusActive": {
+    "message": "Active"
+  },
+  "colorBlack": {
+    "message": "Black"
+  },
+  "colorNavy": {
+    "message": "Dark Navy"
+  },
+  "colorGray": {
+    "message": "Dark Gray"
+  },
+  "colorOriginal": {
+    "message": "Original"
+  }
+}

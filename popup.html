@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=360, initial-scale=1.0">
+  <title data-locale="popupTitle">Webtoon Portrait Mode</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="popup-container">
+    <!-- Header -->
+    <div class="popup-header">
+      <div class="header-logo-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" class="logo-svg" aria-hidden="true">
+          <rect x="2" y="2" width="38" height="38" rx="10" fill="#00e56a" />
+          <path d="M 24 38 L 36 45 L 34 35 Z" fill="#00e56a" stroke="#00e56a" stroke-width="1.5"
+            stroke-linejoin="round" />
+          <text x="21" y="29" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-size="24"
+            fill="#ede8e8" text-anchor="middle">W</text>
+        </svg>
+      </div>
+      <div class="header-text">
+        <h1><span class="brand-webtoon">WEBTOON</span> <span class="brand-addon">Portrait Mode</span></h1>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Settings Group -->
+    <div class="settings-list">
+      <!-- Fit Width Toggle -->
+      <div class="setting-row">
+        <div class="setting-info">
+          <div class="setting-icon-container">
+            <svg class="setting-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="18" rx="2" ry="2" />
+              <path d="M7 12h10M7 12l3-3M7 12l3 3M17 12l-3-3M17 12l-3 3" />
+            </svg>
+          </div>
+          <div>
+            <span class="setting-label" data-locale="labelFitWidth">Fit to Screen</span>
+            <span class="setting-desc" data-locale="descFitWidth">Auto-resize panels to match screen width</span>
+          </div>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="fitWidth" checked aria-label="Fit to Screen" data-locale-aria-label="labelFitWidth">
+          <span class="toggle-slider" aria-hidden="true"></span>
+        </label>
+      </div>
+
+      <!-- Width Slider -->
+      <div class="setting-row slider-row" id="sliderRow">
+        <div class="setting-info">
+          <div class="setting-icon-container">
+            <svg class="setting-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 22V2M20 22V2M8 12h8M8 12l2-2M8 12l2 2M16 12l-2-2M16 12l-2 2" />
+            </svg>
+          </div>
+          <div>
+            <span class="setting-label" data-locale="labelWidth">Width</span>
+            <span class="setting-desc" data-locale="descWidth">Adjust comic display width manually</span>
+          </div>
+        </div>
+        <div class="slider-control">
+          <input type="range" id="widthPercent" min="40" max="100" value="100" class="range-slider" aria-label="Width" data-locale-aria-label="labelWidth" aria-valuetext="100%">
+          <span class="slider-value" id="widthValue" aria-hidden="true">100%</span>
+        </div>
+      </div>
+
+      <!-- Zen Mode Toggle -->
+      <div class="setting-row">
+        <div class="setting-info">
+          <div class="setting-icon-container">
+            <svg class="setting-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24M1 1l22 22" />
+            </svg>
+          </div>
+          <div>
+            <span class="setting-label" data-locale="labelZenMode">Zen Mode</span>
+            <span class="setting-desc" data-locale="descZenMode">Hide sidebar, advertisements, and comments</span>
+          </div>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="zenMode" aria-label="Zen Mode" data-locale-aria-label="labelZenMode">
+          <span class="toggle-slider" aria-hidden="true"></span>
+        </label>
+      </div>
+
+      <!-- Hide Cursor Toggle -->
+      <div class="setting-row">
+        <div class="setting-info">
+          <div class="setting-icon-container">
+            <svg class="setting-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z" />
+              <path d="M13 13l6 6" />
+            </svg>
+          </div>
+          <div>
+            <span class="setting-label" data-locale="labelHideMouse">Hide Cursor</span>
+            <span class="setting-desc" data-locale="descHideMouse">Hide cursor over comic, show on click for 3s</span>
+          </div>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="hideMouse" aria-label="Hide Cursor" data-locale-aria-label="labelHideMouse">
+          <span class="toggle-slider" aria-hidden="true"></span>
+        </label>
+      </div>
+
+      <!-- Auto-Next Episode Toggle -->
+      <div class="setting-row">
+        <div class="setting-info">
+          <div class="setting-icon-container">
+            <svg class="setting-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+            </svg>
+          </div>
+          <div>
+            <span class="setting-label" data-locale="labelAutoNext">Auto-Next Episode</span>
+            <span class="setting-desc" data-locale="descAutoNext">Scroll past bottom to load next chapter</span>
+          </div>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="autoNext" checked aria-label="Auto-Next Episode" data-locale-aria-label="labelAutoNext">
+          <span class="toggle-slider" aria-hidden="true"></span>
+        </label>
+      </div>
+
+      <!-- Background Color -->
+      <div class="setting-row">
+        <div class="setting-info">
+          <div class="setting-icon-container">
+            <svg class="setting-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 14.7255 3.09032 17.1962 4.85857 19C5.35857 19.5 5.25 21 6.5 21C7.5 21 8.5 20 9.5 20C10.5 20 11 22 12 22Z" />
+              <circle cx="7.5" cy="10.5" r="1.5" fill="currentColor" />
+              <circle cx="11.5" cy="7.5" r="1.5" fill="currentColor" />
+              <circle cx="16.5" cy="9.5" r="1.5" fill="currentColor" />
+              <circle cx="15.5" cy="14.5" r="1.5" fill="currentColor" />
+            </svg>
+          </div>
+          <div>
+            <span class="setting-label" data-locale="labelBackground">Background</span>
+            <span class="setting-desc" data-locale="descBackground">Sidebar background color</span>
+          </div>
+        </div>
+        <div class="color-options">
+          <button class="color-btn active" data-color="#000000" title="Black" aria-label="Black" data-locale-title="colorBlack" data-locale-aria-label="colorBlack" style="background:#000000;"></button>
+          <button class="color-btn" data-color="#1a1a2e" title="Dark Navy" aria-label="Dark Navy" data-locale-title="colorNavy" data-locale-aria-label="colorNavy" style="background:#1a1a2e;"></button>
+          <button class="color-btn" data-color="#2d2d2d" title="Dark Gray" aria-label="Dark Gray" data-locale-title="colorGray" data-locale-aria-label="colorGray" style="background:#2d2d2d;"></button>
+          <button class="color-btn" data-color="original" title="Original" aria-label="Original" data-locale-title="colorOriginal" data-locale-aria-label="colorOriginal"
+            style="background: linear-gradient(135deg, #fff 50%, #ccc 50%);"></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Reset Button -->
+    <div class="actions-row">
+      <button class="btn-reset" id="resetBtn">
+        <span aria-hidden="true">↺</span><span data-locale="resetDefaults">Reset Defaults</span>
+      </button>
+      <div class="status-badge" id="statusBadge" role="status" aria-live="polite">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span data-locale="statusActive">Active</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>

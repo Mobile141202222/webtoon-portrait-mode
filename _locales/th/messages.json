@@ -1,0 +1,65 @@
+{
+  "extName": {
+    "message": "Webtoon Portrait Mode"
+  },
+  "extDescription": {
+    "message": "ปรับแต่งภาพ Webtoon ให้พอดีกับหน้าจอแนวตั้ง ลบขอบข้าง และเพิ่มโหมดการอ่านแบบเซน"
+  },
+  "descFitWidth": {
+    "message": "ปรับขนาดช่องภาพให้อัตโนมัติพอดีกับความกว้างหน้าจอ"
+  },
+  "descWidth": {
+    "message": "ปรับความกว้างในการแสดงผลการ์ตูนด้วยตนเอง"
+  },
+  "descZenMode": {
+    "message": "ซ่อนแถบข้าง โฆษณา และความคิดเห็น"
+  },
+  "descHideMouse": {
+    "message": "ซ่อนเคอร์เซอร์เมาส์เมื่ออยู่บนการ์ตูน แสดงเป็นเวลา 3 วินาทีเมื่อคลิก"
+  },
+  "descAutoNext": {
+    "message": "เลื่อนเกินด้านบนหรือล่างเพื่อเปลี่ยนตอน"
+  },
+  "descBackground": {
+    "message": "สีพื้นหลังของแถบข้าง"
+  },
+  "popupTitle": {
+    "message": "Webtoon Portrait Mode"
+  },
+  "labelFitWidth": {
+    "message": "พอดีกับหน้าจอ"
+  },
+  "labelWidth": {
+    "message": "ความกว้าง"
+  },
+  "labelZenMode": {
+    "message": "โหมดเซน"
+  },
+  "labelHideMouse": {
+    "message": "ซ่อนเคอร์เซอร์"
+  },
+  "labelAutoNext": {
+    "message": "ไปตอนถัดไปอัตโนมัติ"
+  },
+  "labelBackground": {
+    "message": "พื้นหลัง"
+  },
+  "resetDefaults": {
+    "message": "คืนค่าเริ่มต้น"
+  },
+  "statusActive": {
+    "message": "ทำงานอยู่"
+  },
+  "colorBlack": {
+    "message": "สีดำ"
+  },
+  "colorNavy": {
+    "message": "สีน้ำเงินเข้ม"
+  },
+  "colorGray": {
+    "message": "สีเทาเข้ม"
+  },
+  "colorOriginal": {
+    "message": "สีดั้งเดิม"
+  }
+}
