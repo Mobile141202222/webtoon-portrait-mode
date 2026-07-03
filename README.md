@@ -1,7 +1,7 @@
 # Webtoon Portrait Mode
 
 <p align="center">
-  <img src="store_assets/store_icon_128.png" width="128" height="128" alt="Webtoon Portrait Mode icon">
+  <img src="icons/icon128.png" width="128" height="128" alt="Webtoon Portrait Mode icon">
 </p>
 
 Webtoon Portrait Mode is a lightweight Chrome extension that improves the Webtoon desktop reader on portrait monitors and large displays. It can fit episode panels to the available width, reduce distractions, preload nearby images, and navigate between episodes with deliberate scroll gestures.
